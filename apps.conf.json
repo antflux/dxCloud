@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "dxcloud",
-      "title": "多协云温湿度监控",
+      "title": "DxCloud",
       "name_zh": "多协云",
       "url": "https://coldchain.duoxieyun.com/"
     }
