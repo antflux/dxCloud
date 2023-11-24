@@ -9,7 +9,7 @@ on:
       title:
         description: 'app title'
         required: true
-        default: '多协云温湿度监控'
+        default: 'DxCloud'
       name_zh:
         description: 'app name in Chinese'
         required: true
@@ -29,7 +29,7 @@ on:
         description: 'app title'
         required: true
         type: string
-        default: '多协云温湿度监控'
+        default: 'DxCloud'
       name_zh:
         description: 'app name in Chinese'
         required: true
@@ -47,16 +47,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        build: [macos, windows]
+        build: [windows]
         include:
           - build: windows
             os: windows-latest
             rust: stable-x86_64-msvc
             target: x86_64-pc-windows-msvc
-          - build: macos
-            os: macos-latest
-            rust: stable
-            target: x86_64-apple-darwin
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
